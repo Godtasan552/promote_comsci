@@ -44,7 +44,8 @@ nav {
 /* ปุ่มเมนูใน navbar */
 .navbar-toggler {
     color: white; /* สีพื้นหลังของปุ่มเมนู */
-    border: white; /* ไม่มีกรอบ */
+    border:2px solid var(--color-orange); /* ไม่มีกรอบ */
+    border-radius: 5px;
 }
 
 /* สไตล์ของลิงก์ใน navbar */
@@ -103,6 +104,10 @@ h1 {
 .btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
+}
+.btn-primary{
+    background-color:#0066FF;
+    color: white;
 }
 
 .features {
