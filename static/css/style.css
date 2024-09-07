@@ -10,6 +10,7 @@
 
 body,
 html {
+    height: 100%;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
@@ -205,3 +206,34 @@ footer {
     color: var(--color-dark);
     /* สีข้อความหลังจากเลื่อน */
 }
+
+.hero {
+    position: relative;
+    height: 100vh; /* ทำให้ section มีความสูงเต็มจอ */
+    overflow: cover; /* ป้องกันการแสดงผลที่เกินออกมานอกจอ */
+}
+
+.carousel-inner {
+    height: 100%; /* ทำให้ .carousel-inner มีความสูงเต็ม */
+    display: flex;
+    justify-content: center; /* จัดแนวนอนกลาง */
+    align-items: center; /* จัดแนวตั้งกลาง */
+    background-color: #051223; /* สีพื้นหลัง */
+}
+
+.carousel-caption {
+    position: absolute; /* ทำให้ข้อความอยู่ในตำแหน่งที่ต้องการ */
+    top: 50%; /* จัดแนวตั้งกลาง */
+    left: 50%; /* จัดแนวนอนกลาง */
+    transform: translate(-50%, -50%); /* แก้ไขตำแหน่งให้ข้อความอยู่กลาง */
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+    color: yellow; /* สีข้อความ */
+
+    
+}
+
+.carousel-caption h1,
+.carousel-caption p {
+    margin: 0; /* ลบ margin ของข้อความ */
+}
+
