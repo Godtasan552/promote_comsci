@@ -65,8 +65,14 @@
               <li class="nav-item">
                 <a class="nav-link" href="#contact2">ติดต่อเรา</a>
               </li>
-              
-              <button type="button" class="btn btn-primary" onclick="redirectTo('https://www.oass.sskru.ac.th/std.sskru/s1.html?fbclid=IwAR2S1BxOZNeff9TkRAGmhRp3tchZbF61JbWnWK73VlBNTO4Z4aZnYzwc4lw')">สมัครเรียน</button>
+
+              <button
+                type="button"
+                class="btn btn-primary"
+                onclick="redirectTo('https://www.oass.sskru.ac.th/std.sskru/s1.html?fbclid=IwAR2S1BxOZNeff9TkRAGmhRp3tchZbF61JbWnWK73VlBNTO4Z4aZnYzwc4lw')"
+              >
+                สมัครเรียน
+              </button>
             </ul>
           </div>
         </div>
@@ -76,60 +82,233 @@
         <div class="container">
           <h1>สร้างอนาคตด้วยวิทยาการคอมพิวเตอร์</h1>
           <p>เรียนรู้ สร้างสรรค์ และพัฒนานวัตกรรมที่จะเปลี่ยนแปลงโลก</p>
-          <button type="button" class="btn " onclick="redirectTo('https://www.oass.sskru.ac.th/std.sskru/s1.html?fbclid=IwAR2S1BxOZNeff9TkRAGmhRp3tchZbF61JbWnWK73VlBNTO4Z4aZnYzwc4lw')">สมัครเรียน</button>
+          <button
+            type="button"
+            class="btn"
+            onclick="redirectTo('https://www.oass.sskru.ac.th/std.sskru/s1.html?fbclid=IwAR2S1BxOZNeff9TkRAGmhRp3tchZbF61JbWnWK73VlBNTO4Z4aZnYzwc4lw')"
+          >
+            สมัครเรียน
+          </button>
         </div>
       </section>
     </header>
     <main>
       <!--curriculum-->
       {% block curriculum %}
-        <div class="container" id='activity1'>
-          <!--content-->
-          <h1>curriculum</h1>
-        </div>
+      <div class="container" id="activity1">
+        <!--content-->
+        <h1>curriculum</h1>
+      </div>
       {% endblock curriculum %}
 
-        <!--finish-->
+      <!--finish-->
       {% block finish %}
-        <div class="container" id='finish4'>
-          <!--content-->
-          <h1>finish</h1>
-      
-        </div>
+      <div class="container" id="finish4">
+        <!--content-->
+        <h1>finish</h1>
+      </div>
       {% endblock finish %}
 
       <!--studentwork-->
       {% block studentwork %}
-        <div class="container" id='studentwork5'>
-          <!--content-->
-          <h1>studentwork</h1>
-        
-        </div>
+      <div class="container" id="studentwork5">
+        <!--content-->
+        <h1>studentwork</h1>
+      </div>
       {% endblock studentwork %}
 
-        <!--activity-->
-      {% block  activity %}
-        <div class="container" id='activity1'>
-          <!--content-->
-          <h1>activity</h1>
-        </div>
+      <!--activity-->
+      {% block activity %}
+      <div class="container" id="activity1">
+        <!--content-->
+        <h1>activity</h1>
+      </div>
       {% endblock activity %}
 
-        <!--contact-->
+      <!--contact-->
       {% block contact %}
-        <div class="container" id='contact2'>
-          <!--content-->
-          <h1>contact</h1>
+      <div class="container" id="contact2">
+        <h1>ติดต่อเรา</h1>
+        <hr />
+        <h2 class="empty-line"></h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- แถวแรก (ซ้าย) -->
+          <div class="col text-center">
+            <div class="contact-item">
+              <div class="contact-icon-text">
+                <img
+                  src="https://img.icons8.com/?size=256w&id=tuSyDA4Jkbyh&format=png&color=FFFFFF"
+                  class="contact-icon"
+                  alt="โทรศัพท์"
+                />
+                <p><strong>โทรศัพท์:</strong> (+66) 045-643-600-5</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-text">
+                <img
+                  src="https://img.icons8.com/?size=256w&id=2963&format=png&color=FFFFFF"
+                  class="contact-icon"
+                  alt="เว็บไซต์"
+                />
+                <p>
+                  <strong>เว็บไซต์:</strong>
+                  <a href="https://www.sskru.ac.th">sskru.ac.th</a>
+                </p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-text">
+                <img
+                  src="https://img.icons8.com/?size=256w&id=124379&format=png&color=FFFFFF"
+                  class="contact-icon"
+                  alt="อีเมล"
+                />
+                <p>
+                  <strong>อีเมล:</strong>
+                  <a href="mailto:webmaster@sskru.ac.th"
+                    >webmaster@sskru.ac.th</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- แถวสอง (กลาง) -->
+          <div class="col text-center">
+            <div class="contact-item">
+              <div class="contact-icon-text">
+                <img
+                  src="https://img.icons8.com/?size=256w&id=j9BCUGfss2SX&format=png&color=FFFFFF"
+                  class="contact-icon"
+                  alt="โทรศัพท์มือถือ"
+                />
+                <p><strong>โทรศัพท์มือถือ:</strong> 084-298-2456</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-text">
+                <img
+                  src="https://img.icons8.com/?size=256w&id=7880&format=png&color=FFFFFF"
+                  class="contact-icon"
+                  alt="ที่อยู่"
+                />
+                <p>
+                  <strong>ที่อยู่:</strong>
+                  <a
+                    href="https://maps.app.goo.gl/oKurKgPixATmhneMA"
+                    target="_blank"
+                  >
+                    มหาวิทยาลัยราชภัฏศรีสะเกษ 319 ถนนไทยพันทา ต.โพธิ์ อ.เมือง
+                    จ.ศรีสะเกษ 33000
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-text">
+                <img
+                  src="https://img.icons8.com/?size=256w&id=dCRS0LsfeSHc&format=png&color=FFFFFF"
+                  class="contact-icon"
+                  alt="Facebook"
+                />
+                <p>
+                  <strong>Facebook:</strong>
+                  <a
+                    href="https://www.facebook.com/comsci.sskru"
+                    target="_blank"
+                  >
+                    วิทยาการคอมพิวเตอร์ มหาวิทยาลัยราชภัฏศรีสะเกษ
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- แถวสาม (ขวา) -->
+          <div class="col text-center qr-col">
+            <div class="contact-item">
+              <div class="contact-icon-text">
+                <p style="margin: 0"><strong></strong></p>
+              </div>
+              <img
+                src="https://comsci-sskru.web.app/assets/M_gainfriends_2dbarcodes_GW-CoqdYakD.png"
+                alt="QR Code"
+                class="qr-code"
+              />
+            </div>
+          </div>
         </div>
+      </div>
+
+      <style>
+        #contact2 {
+          padding: 20px;
+          margin-bottom: 20px; /* เพิ่มระยะห่างด้านล่างของคอนเทนเนอร์ */
+        }
+
+        .row {
+          margin-right: -15px;
+          margin-left: -15px;
+        }
+
+        .col {
+          padding-right: 15px;
+          padding-left: 15px;
+        }
+
+        .contact-item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px; /* เพิ่มระยะห่างระหว่างบรรทัด */
+        }
+
+        .contact-icon {
+          margin-right: 10px;
+          width: 36px;
+          height: 36px;
+        }
+
+        .contact-icon-text {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .contact-item p {
+          margin: 0;
+        }
+
+        /* CSS สำหรับ QR Code */
+        .qr-col {
+          display: flex;
+          justify-content: flex-end; /* จัดให้ QR code อยู่ทางด้านขวา */
+          align-items: center;
+        }
+
+        .qr-code {
+          width: 150px;
+          height: 150px; /* ปรับขนาด QR code ตามต้องการ */
+        }
+
+        /* CSS สำหรับ <h2> ที่เป็นบรรทัดว่าง */
+        .empty-line {
+          height: 40px; /* ความสูงของบรรทัดว่าง */
+          margin: 20px 0; /* ระยะห่างด้านบนและล่าง */
+          /* หากต้องการระยะห่างมากกว่านี้ สามารถปรับค่าได้ */
+        }
+      </style>
+
       {% endblock contact %}
 
+      <!--contact-->
       {% block content %}
       <!--no tuch-->
       {% endblock content %}
 
       <!--footer-->
       {% block footers %}
-        <!--no tuch-->
+      <!--no tuch-->
       {% endblock footers %}
     </main>
     <script src="static\js\javascript.js"></script>
