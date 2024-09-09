@@ -206,7 +206,20 @@ footer {
     /* สีข้อความหลังจากเลื่อน */
 }
 .carousel-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: none; /* ซ่อนการ์ดทั้งหมด */
+    position: relative;
+}
+
+.carousel-item.active {
+    display: block; /* แสดงเฉพาะการ์ดที่ active */
+    position: relative;
+    z-index: 1;
+}
+
+.carousel-inner {
+    overflow: hidden;
+}
+.carousel-item {
+    transition: transform 0.5s ease-in-out;
   }
+  
