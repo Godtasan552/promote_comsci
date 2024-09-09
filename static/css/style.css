@@ -205,3 +205,8 @@ footer {
     color: var(--color-dark);
     /* สีข้อความหลังจากเลื่อน */
 }
+.carousel-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
