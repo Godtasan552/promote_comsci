@@ -205,3 +205,58 @@ footer {
     color: var(--color-dark);
     /* สีข้อความหลังจากเลื่อน */
 }
+/* CSS ของ Contact */
+        #contact2 {
+          padding: 20px;
+          margin-bottom: 20px;
+        }
+
+        .row {
+          margin-right: -15px;
+          margin-left: -15px;
+        }
+
+        .col {
+          padding-right: 15px;
+          padding-left: 15px;
+        }
+
+        .contact-item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px;
+        }
+
+        .contact-icon {
+          margin-right: 10px;
+          width: 36px;
+          height: 36px;
+        }
+
+        .contact-icon-text {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .contact-item p {
+          margin: 0;
+        }
+
+        .qr-col {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+        }
+
+        .qr-code {
+          width: 150px;
+          height: 150px;
+        }
+
+        .empty-line {
+          height: 40px;
+          margin: 20px 0;
+        }
+        /* CSS ของ Contact */
+      
