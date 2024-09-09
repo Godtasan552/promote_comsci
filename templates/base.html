@@ -73,19 +73,31 @@
       </nav>
 
       <section class="hero" id="home">
-        <div class="container">
-          <h1>สร้างอนาคตด้วยวิทยาการคอมพิวเตอร์</h1>
-          <p>เรียนรู้ สร้างสรรค์ และพัฒนานวัตกรรมที่จะเปลี่ยนแปลงโลก</p>
-          <h3>มหาวิทยาลัยราชภัฎศรีสะเกษ</h3>
-          <button type="button" class="btn " onclick="redirectTo('https://www.oass.sskru.ac.th/std.sskru/s1.html?fbclid=IwAR2S1BxOZNeff9TkRAGmhRp3tchZbF61JbWnWK73VlBNTO4Z4aZnYzwc4lw')">สมัครเรียน</button>
-        </div>
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+              <img src="static\image\pro.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+              <h1 class="display-5 fw-bold lh-1 mb-3">สร้างอนาคตด้วยวิทยาการคอมพิวเตอร์</h1>
+              <h3 class="display-5 fw-bold lh-1 mb-3">มหาวิทยาลัยราชภัฎศรีสะเกษ</h3>
+              <p class="lead">เรียนรู้ สร้างสรรค์ และพัฒนานวัตกรรมที่จะเปลี่ยนแปลงโลก</p>
+              <div class="d-grid gap-2 d-md-flex justify-content-center">
+                <button type="button" class="btn btn-lg px-4 me-md-2" onclick="redirectTo('https://www.oass.sskru.ac.th/std.sskru/s1.html?fbclid=IwAR2S1BxOZNeff9TkRAGmhRp3tchZbF61JbWnWK73VlBNTO4Z4aZnYzwc4lw')">สมัครเรียน</button>
+              </div>
+            </div>
+          </div>
       </section>
     </header>
+
     <main>
 
       <!--curriculum-->
       {% block curriculum %}
-      <div class="container py-5" id='activity1'>
+      
+      <div class="container py-5" id='curriculum3'>
+        <div class="container text-center align-items-center">
+          <h3>เราจะได้เรียนไรอะไรบ้าง</h3>
+        </div>
         <div class="row gx-5">
           <div class="col-md-6 mb-3">
             <div class="card" style="max-width: 100%;">
@@ -139,11 +151,11 @@
             <div class="card" style="max-width: 100%;">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img src="static/image/pro.jpg" class="img-fluid rounded-start" alt="...">
+                  <img src="static\image\artificial-intelligence-logo-artificial-intelligence-machine-learning-concept-vector-symbol-ai-n_208588-2763.avif" class="img-fluid rounded-start" alt="...">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">Artificial Intelligence</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                   </div>
                 </div>
@@ -156,11 +168,11 @@
             <div class="card" style="max-width: 100%;">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img src="static/image/pro.jpg" class="img-fluid rounded-start" alt="...">
+                  <img src="static\image\1725868267037n454x7pb.jpg" class="img-fluid rounded-start" alt="...">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">Data Science</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                   </div>
                 </div>
@@ -172,11 +184,11 @@
             <div class="card" style="max-width: 100%;">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img src="static/image/pro.jpg" class="img-fluid rounded-start" alt="...">
+                  <img src="static\image\1725868560372zian1s5n.jpg" class="img-fluid rounded-start" alt="...">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">Information Security</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                   </div>
                 </div>
@@ -188,11 +200,11 @@
             <div class="card" style="max-width: 100%;">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img src="static/image/pro.jpg" class="img-fluid rounded-start" alt="...">
+                  <img src="static\image\1725868750967d944l5vi.jpg" class="img-fluid rounded-start" alt="...">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">Computer Forensics and Cybercrime</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                   </div>
                 </div>
@@ -204,11 +216,27 @@
             <div class="card" style="max-width: 100%;">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img src="static/image/pro.jpg" class="img-fluid rounded-start" alt="...">
+                  <img src="static\image\1725868903956i5um4ot9.jpg" class="img-fluid rounded-start" alt="...">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">Database Systems</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="card" style="max-width: 100%;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="static\image\1725871239500vrb4volb.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Image Processing</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                   </div>
                 </div>
