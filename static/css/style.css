@@ -170,3 +170,7 @@ footer {
 .card:hover{
     transform: scale(1.025);
 }
+.underline{
+    text-decoration: underline;
+    text-decoration-color: #ff6b35;
+}
