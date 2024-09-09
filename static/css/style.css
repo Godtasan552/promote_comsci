@@ -206,19 +206,23 @@ footer {
     /* สีข้อความหลังจากเลื่อน */
 }
 .carousel-item {
-    display: none; /* ซ่อนการ์ดทั้งหมด */
-    position: relative;
+    opacity: 0; /* ซ่อนการ์ดทั้งหมด */
+    position: absolute; /* ใช้ absolute เพื่อป้องกันการเปลี่ยนตำแหน่ง */
+    transition: opacity 0.5s ease-in-out;
+    width: 100%; /* ให้การ์ดมีขนาดเต็มพื้นที่ */
+    height: 100%; /* ให้การ์ดมีขนาดเต็มพื้นที่ */
 }
 
 .carousel-item.active {
-    display: block; /* แสดงเฉพาะการ์ดที่ active */
-    position: relative;
+    opacity: 1; /* แสดงเฉพาะการ์ดที่ active */
+    position: relative; /* เปลี่ยนกลับเป็น relative */
     z-index: 1;
 }
 
 .carousel-inner {
+    position: relative;
     overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
-.carousel-item {
-    transition: transform 0.5s ease-in-out;
-  }
+
