@@ -18,6 +18,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="static\css\style.css" />
+    <link rel="icon" href="static/image/logoCS.png" type="image/x-icon" />
   </head>
   <body id="page-top">
     <header>
@@ -140,9 +141,9 @@
             aria-label="Slide 3"
           ></button>
         </div>
-        <div class="carousel-inner">
+        <div class="carousel-inner" id="curriculum3">
           <div class="carousel-item">
-            <div class="container py-5" id="curriculum1">
+            <div class="container py-5">
               <div class="container text-center align-items-center">
                 <h3 class="underline">เรียนกับเราแล้วดียังไง</h3>
               </div>
@@ -363,7 +364,7 @@
               <hr />
             </div>
           </div>
-          <div class="carousel-item active" id="curriculum3">
+          <div class="carousel-item active">
             <div class="container py-5">
               <div class="container text-center align-items-center">
                 <h3 class="underline">เราจะได้เรียนไรอะไรบ้าง</h3>
@@ -596,7 +597,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <div class="container py-5" id="curriculum2">
+            <div class="container py-5">
               <div class="container text-center align-items-center">
                 <h3 class="underline">จบแล้วทำอาชีพอะไรได้บ้าง</h3>
               </div>
@@ -828,23 +829,428 @@
       {% block studentwork %}
       <div class="container" id="studentwork5">
         <!--content-->
-        <h1>studentwork</h1>
+    
+        <h5 class="fw-bold fs-2 my-4">ศิษย์เก่า สาขาวิทยาการคอมพิวเตอร์</h5>
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
+                      <div class="card" style="width: 19rem;">
+                          <img src="static\image\student1.jpg" class="card-img-top" alt="...">
+                          
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
+                      <div class="card" style="width: 19rem;">
+                          <img src="static\image\student2.jpg" class="card-img-top" alt="...">
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
+                      <div class="card" style="width: 19rem;">
+                          <img src="static\image\student3.jpg" class="card-img-top" alt="...">
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
+                      <div class="card" style="width: 19rem;">
+                          <img src="static\image\student4.jpg" class="card-img-top" alt="...">
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
+                      <div class="card" style="width: 19rem;">
+                          <img src="static\image\student5.jpg" class="card-img-top" alt="...">
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
+                      <div class="card" style="width: 19rem;">
+                          <img src="static\image\student6.jpg" class="card-img-top" alt="...">
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
+                      <div class="card" style="width: 19rem;">
+                          <img src="static\image\student7.jpg" class="card-img-top" alt="...">
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
+                      <div class="card" style="width: 19rem;">
+                          <img src="static\image\student8.jpg" class="card-img-top" alt="...">
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
+                      <div class="card" style="width: 19rem;">
+                          <img src="static\image\student9.jpg" class="card-img-top" alt="...">
+                      </div>
+                  </div>
+              </div>
+              <!-- เพิ่ม carousel-item อื่นๆ ตามต้องการ -->
+          </div>
+          <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </a>
       </div>
+    
+        <!--เนื้อหาผลงานนักศึกษา-->
+        <h5 class="fw-bold fs-2 my-4">ผลงานนักศึกษา</h5>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100 d-flex flex-column mx-auto" style="width: 100%">
+                        <img src="static/image/studentwork2.jpg" class="card-img-top" alt="Student Work"/>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">movie infomation</h5>
+                            <p class="card-text">
+                                แอปหาข้อมูลหนังด้วย api tmdb จากนักศึกษาชั้นปีที่3,2,1
+                                เป็นprojectงาน hackathon swift coding
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100 d-flex flex-column mx-auto" style="width: 100%">
+                        <a href="https://www.sisaket-charity.net/" target="_blank">
+                            <img src="static/image/studentwork1.jpg" class="card-img-top" alt="Student Work"/>
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">เสื้อเฉลิมฉลองเมือง 242 ปี</h5>
+                            <p class="card-text">
+                                ระบบสำหรับสั่งจองฉลองเมือศรีสะเกษ​ 242 ปี พัฒนาโดย
+                                ผู้ช่วยศาสตราจารย์พิศาล สุขขี และนักศึกษาชั้นปีที่ 3 ของ
+                                สาขาวิชาวิทยาการคอมพิวเตอร์
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100 d-flex flex-column mx-auto" style="width: 100%">
+                        <img src="static/image/studentwork3.jpg" class="card-img-top" alt="Student Work"/>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">น้องลำดวน</h5>
+                            <p class="card-text">
+                                โปรเจคคณาจารย์พัฒนาร่วมกันกับนักศึกษาในสาขาวิทยาการคอมพิวเตอร์
+                                สู่การใช้งานเพื่อการส่งเสริมการ...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
       {% endblock studentwork %}
 
       <!--activity-->
       {% block activity %}
+
       <div class="container" id="activity1">
         <!--content-->
         <h1>activity</h1>
+
+      <div class="container px-4 px-lg-5 mb-4" id="activity1">
+        <div class="feature-grid">
+          <div class="feature-card">
+            <img
+              src="static\image\450055683_863892982450981_151007795583764724_n.jpg"
+              class="img-thumbnail"
+              alt="..."
+            />
+            <h3>กิจกรรมของสาขาเรา</h3>
+            <p>
+              ssk robotic
+              โดยการจัดงานครั้งนี้มีผู้เข้าร่วมการแข่งขันจากทั่วประเทศ
+              ซึ่งมีจำนวนทั้งสิ้น 1,546 คน แบ่งออกเป็น ผู้ฝึกสอน 568 คน และ
+              นักเรียน 978 คน โดยมีทีมเข้าร่วมทั้งสิ้น 481 ทีม
+              และนอกจากนี้นักศึกษาในสาขาวิชาวิทยาการคอมพิวเตอร์
+              ได้เป็นส่วนสำคัญในการจัดเตรียมงานต่าง ๆ
+              ตลอดจนรับหน้าที่เป็นผู้ตัดสินให้คะแนน ในการแข่งขันอีกด้วย
+            </p>
+          </div>
+          <div class="feature-card">
+            <img
+              src="static\image\456030320_892031239637155_3033459481031134068_n.jpg"
+              class="img-thumbnail"
+              alt="..."
+            />
+            <div class="feature-icon"></div>
+            <h3>กิจกรรมของสาขาเรา</h3>
+            <p>
+              โดยกิจกรรมที่จัดขึ้นเมื่อวันที่ 16 สิงหาคม 2567 ณ ห้อง 4408
+              คณะศิลปศาสตร์และวิทยาศาสตร์ ประสบความสำเร็จอย่างงดงาม
+              ด้วยทีมเข้าร่วมทั้งสิ้น 45 ทีม แบ่งเป็นรุ่น Junior, Senior และ
+              Senior Open ทั้งหมด 3 รุ่น มีน้อง ๆ เข้าร่วมกว่า 1 ร้อยชีวิต ..
+              ทางสาขาวิชา ขอแสดงความยินดีกับน้อง ๆ ผู้ได้รับรางวัลทุก ๆ ท่าน
+              และขอชื่นชมกับความพยายามของทุกทีมที่ร่วมแข่งขัน ความคิดสร้างสรรค์
+              และทักษะของน้อง ๆ ที่นำมาใช้ในการแข่งขันในครั้งนี้
+            </p>
+          </div>
+          <div class="feature-card">
+            <img
+              src="static\image\qrcode_125355908_e7edc0e3789a98c6e7cc24f7eb938987.png"
+              class="img-thumbnail"
+              alt="..."
+            />
+            <div class="feature-icon"></div>
+            <h3>ดูเพิ่มเติม</h3>
+            <p>SCANME</p>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="container px-4 px-lg-5">
+        <div class="feature-grid">
+          <div class="feature-card">
+            <img
+              src="static\image\453246140_879399800900299_7885944663998061476_n.jpg"
+              class="img-thumbnail"
+              alt="..."
+            />
+            <div class="feature-icon"></div>
+            <h3>กิจกรรมอบรม</h3>
+            <p>
+              สาขาวิทยาการคอมพิวเตอร์ จับมือกับ บริษัท IMAKE Innovation และ
+              หอการค้าจังหวัดศรีสะเกษ
+              ร่วมมือกันพัฒนาเยาวชนของจังหวัดศรีสะเกษเพื่อต่อยอด สู่การแข่งขัน
+              Arduino Education Day Thailand 2024 .. ด้วยการจัดอบรม Arduino
+              Student Kit ฟิสิกส์สัประยุทธ์ ณ ห้อง 4408
+              คณะศิลปศาสตร์และวิทยาศาสตร์ มหาวิทยาลัยราชภัฏศรีสะเกษ ในวันที่ 27
+              - 28 ก.ค. 2567 โดยมีน้อง ๆ นักเรียนเข้าร่วมการอบรมกว่า 200 คน
+            </p>
+          </div>
+          <div class="feature-card">
+            <iframe
+              src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fcomsci.sskru%2Fvideos%2F480398971598042%2F&show_text=false&width=267&t=0"
+              width="267"
+              height="476"
+              style="border: none; overflow: hidden"
+              scrolling="no"
+              frameborder="0"
+              allowfullscreen="true"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              allowfullscreen="true"
+            ></iframe>
+            <div class="feature-icon"></div>
+            <h3>กิจกรรมอบรม</h3>
+            <p>Swif coding</p>
+          </div>
+          <div class="feature-card">
+            <iframe
+              src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F247180088225387%2F&show_text=false&width=267&t=0"
+              width="267"
+              height="476"
+              style="border: none; overflow: hidden"
+              scrolling="no"
+              frameborder="0"
+              allowfullscreen="true"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              allowfullscreen="true"
+            ></iframe>
+            <div class="feature-icon"></div>
+            <h3>กิจกรรมอบรม</h3>
+            <p>ความรู้และทักษะทางด้านดิจิทัลให้โรงเรียนวัดหลวงวิทยา</p>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="container px-4 px-lg-5">
+        <div class="feature-grid">
+          <div class="feature-card">
+            <img src="static\image\451093020_361438926980574_4049424285477342336_n.jpg" class="img-thumbnail" alt="...">
+            <div class="feature-icon"></div>
+            <h3>กิจกรรมรับน้องสาขาเรา</h3>
+            <p></p>
+          </div>
+          <div class="feature-card">
+            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fcomsci.sskru%2Fvideos%2F1143664050269365%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+            <div class="feature-icon"></div>
+            <h3>กิจกรรมรับน้องสาขาเรา</h3>
+            <p>เพิ่มเติม</p>
+         
+        </div>
       </div>
       {% endblock activity %}
 
       <!--contact-->
       {% block contact %}
-      <div class="container" id="contact2">
-        <!--content-->
-        <h1>contact</h1>
+        <div class="container" id="contact2">
+        <h1>ติดต่อเรา</h1>
+        <hr />
+        <h2 class="empty-line"></h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- แถวติดต่อ (ซ้ายสุด) -->
+          <div class="col text-center">
+            <div class="contact-item">
+              <div class="contact-icon-text">
+                <img
+                  src="https://img.icons8.com/?size=256w&id=tuSyDA4Jkbyh&format=png&color=FFFFFF"
+                  class="contact-icon"
+                  alt="โทรศัพท์"
+                />
+                <p><strong>โทรศัพท์:</strong> (+66) 045-643-600-5</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-text">
+                <img
+                  src="https://img.icons8.com/?size=256w&id=j9BCUGfss2SX&format=png&color=FFFFFF"
+                  class="contact-icon"
+                  alt="โทรศัพท์มือถือ"
+                />
+                <p><strong>โทรศัพท์มือถือ:</strong> 084-298-2456</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-text">
+                <img
+                  src="https://img.icons8.com/?size=256w&id=dCRS0LsfeSHc&format=png&color=FFFFFF"
+                  class="contact-icon"
+                  alt="Facebook"
+                />
+                <p>
+                  <strong>Facebook:</strong>
+                  <a
+                    href="https://www.facebook.com/comsci.sskru"
+                    target="_blank"
+                    >วิทยาการคอมพิวเตอร์</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-text">
+                <img
+                  src="https://img.icons8.com/?size=256w&id=2963&format=png&color=FFFFFF"
+                  class="contact-icon"
+                  alt="เว็บไซต์"
+                />
+                <p>
+                  <strong>เว็บไซต์:</strong>
+                  <a href="https://www.sskru.ac.th">sskru.ac.th</a>
+                </p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-text">
+                <img
+                  src="https://img.icons8.com/?size=256w&id=124379&format=png&color=FFFFFF"
+                  class="contact-icon"
+                  alt="อีเมล"
+                />
+                <p>
+                  <strong>อีเมล:</strong>
+                  <a href="mailto:webmaster@sskru.ac.th"
+                    >webmaster@sskru.ac.th</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-text">
+                <img
+                  src="https://img.icons8.com/?size=256w&id=7880&format=png&color=FFFFFF"
+                  class="contact-icon"
+                  alt="ที่อยู่"
+                />
+                <p>
+                  <strong>ที่อยู่:</strong>
+                  <a
+                    href="https://maps.app.goo.gl/oKurKgPixATmhneMA"
+                    target="_blank"
+                    >มหาวิทยาลัยราชภัฏศรีสะเกษ</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- แถวคุณสมบัติผู้สมัคร (กลาง) -->
+          <div class="col">
+            <h3 class="fw-semibold">#คุณสมบัติผู้สมัคร</h3>
+            <div class="m-auto row row-cols-1 gx-5">
+              <div class="col">
+                <ul style="list-style: none">
+                  <li>
+                    <b class="fs-5">จบการศึกษาในระดับ</b>
+                    <ul>
+                      <li>มัธยมศึกษาตอนปลาย</li>
+                      <li>ปวช. ปวส.</li>
+                      <li>ปริญญาตรีทุกสาขา</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- แถว QR (ขวาสุด) -->
+          <div class="col text-center">
+            <h3 style="margin-bottom: 15px">
+              สแกน QR Code เพื่อติดตามข่าวสารและข้อมูลเพิ่มเติม
+            </h3>
+            <div class="qr-section" style="margin-bottom: 20px">
+              <div class="contact-item">
+                <img
+                  src="https://comsci-sskru.web.app/assets/S_gainfriends_2dbarcodes_GW-CjIeyaYr.png"
+                  alt="QR Code"
+                  class="qr-code"
+                  style="
+                    width: 120px;
+                    height: auto;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                  "
+                />
+              </div>
+              <div class="contact-item">
+                <img
+                  src="https://comsci-sskru.web.app/assets/TItok-CH74RJSP.png"
+                  alt="QR Code"
+                  class="qr-code"
+                  style="
+                    width: 200px;
+                    height: auto;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                  "
+                />
+              </div>
+              <div class="contact-item">
+                <img
+                  src="https://comsci-sskru.web.app/assets/FacebookLogo-D-ZSw0wB.png"
+                  alt="QR Code"
+                  class="qr-code"
+                  style="
+                    width: 200px;
+                    height: auto;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                  "
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       {% endblock contact %} {% block content %}
       <!--no tuch-->
