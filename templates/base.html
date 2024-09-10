@@ -80,26 +80,741 @@
       </nav>
 
       <section class="hero" id="home">
-        <div class="container">
-          <h1>สร้างอนาคตด้วยวิทยาการคอมพิวเตอร์</h1>
-          <p>เรียนรู้ สร้างสรรค์ และพัฒนานวัตกรรมที่จะเปลี่ยนแปลงโลก</p>
-          <button
-            type="button"
-            class="btn"
-            onclick="redirectTo('https://www.oass.sskru.ac.th/std.sskru/s1.html?fbclid=IwAR2S1BxOZNeff9TkRAGmhRp3tchZbF61JbWnWK73VlBNTO4Z4aZnYzwc4lw')"
-          >
-            สมัครเรียน
-          </button>
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-3">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img
+              src="static\image\pro.jpg"
+              class="d-block mx-lg-auto img-fluid"
+              alt="Bootstrap Themes"
+              width="700"
+              height="500"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">
+              สร้างอนาคตด้วยวิทยาการคอมพิวเตอร์
+            </h1>
+            <h3 class="display-5 fw-bold lh-1 mb-3">
+              มหาวิทยาลัยราชภัฎศรีสะเกษ
+            </h3>
+            <p class="lead">
+              เรียนรู้ สร้างสรรค์ และพัฒนานวัตกรรมที่จะเปลี่ยนแปลงโลก
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-center">
+              <button
+                type="button"
+                class="btn btn-lg px-4 me-md-2"
+                onclick="redirectTo('https://www.oass.sskru.ac.th/std.sskru/s1.html?fbclid=IwAR2S1BxOZNeff9TkRAGmhRp3tchZbF61JbWnWK73VlBNTO4Z4aZnYzwc4lw')"
+              >
+                สมัครเรียน
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </header>
+
     <main>
       <!--curriculum-->
       {% block curriculum %}
-      <div class="container" id="activity1">
-        <!--content-->
-        <h1>curriculum</h1>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner" id="curriculum3">
+          <div class="carousel-item">
+            <div class="container py-5">
+              <div class="container text-center align-items-center">
+                <h3 class="underline">เรียนกับเราแล้วดียังไง</h3>
+              </div>
+              <hr />
+              <div class="row gx-5">
+                <div class="col-md-6 mb-3 d-flex">
+                  <div class="card h-100 w-100 d-flex flex-column">
+                    <div class="row g-0 flex-grow-1">
+                      <div class="col-md-4 d-flex align-items-center">
+                        <img
+                          src="static/image/1725814074327s0qn9tpa.jpg"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8 d-flex flex-column">
+                        <div class="card-body flex-grow-1">
+                          <h5 class="card-title">
+                            <u>สามารถกู้ กยศ. ได้ 100%</u>
+                          </h5>
+                          <p class="card-text">
+                            เนื่องจากเป็นประเภทวิชาและสาขาที่เป็นความต้องการหลักและมีความชัดเจนของการผลิตกำลังคน
+                            สำหรับนิสิต นักศึกษา
+                            สามารถขอรับเงินกู้จากกองทุนการศึกษาเพื่อการศึกษา
+                            (กยศ) ได้เต็มจำนวน 100%
+                            ซึ่งช่วยลดภาระค่าใช้จ่ายในการศึกษา
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mb-3 d-flex">
+                  <div class="card h-100 w-100 d-flex flex-column">
+                    <div class="row g-0 flex-grow-1">
+                      <div class="col-md-4 d-flex align-items-center">
+                        <img
+                          src="static/image/172581377178446lspgmu.jpg"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8 d-flex flex-column">
+                        <div class="card-body flex-grow-1">
+                          <h5 class="card-title"><u>การเรียนรู้ใกล้บ้าน</u></h5>
+                          <p class="card-text">
+                            สามารถเรียนอยู่ที่บ้านเราเองหรือใกล้บ้าน
+                            ทำให้สะดวกในการเดินทางและลดค่าใช้จ่าย
+                            ทำให้เรามีเวลามากขึ้นสำหรับการเรียนรู้และพัฒนาตนเอง
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mb-3 d-flex">
+                  <div class="card h-100 w-100 d-flex flex-column">
+                    <div class="row g-0 flex-grow-1">
+                      <div class="col-md-4 d-flex align-items-center">
+                        <img
+                          src="static/image/1725814074327iyj2tzbl.jpg"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8 d-flex flex-column">
+                        <div class="card-body flex-grow-1">
+                          <h5 class="card-title">
+                            <u>ติดตามเทรนด์เทคโนโลยีอย่างทันสมัย</u>
+                          </h5>
+                          <p class="card-text">
+                            ได้รับข้อมูลและอัพเดตล่าสุดเกี่ยวกับเทคโนโลยีใหม่ ๆ
+                            อย่างต่อเนื่อง
+                            ช่วยให้คุณไม่พลาดข่าวสารและแนวโน้มที่กำลังเป็นที่นิยม
+                            เพื่อให้คุณเข้าใจและติดตามได้อย่างสม่ำเสมอ
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mb-3 d-flex">
+                  <div class="card h-100 w-100 d-flex flex-column">
+                    <div class="row g-0 flex-grow-1">
+                      <div class="col-md-4 d-flex align-items-center">
+                        <img
+                          src="static/image/artificial-intelligence-logo-artificial-intelligence-machine-learning-concept-vector-symbol-ai-n_208588-2763.avif"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8 d-flex flex-column">
+                        <div class="card-body flex-grow-1">
+                          <h5 class="card-title">
+                            <u>โอกาสงานที่มีอนาคตสดใสในด้านเทคโนโลยี</u>
+                          </h5>
+                          <p class="card-text">
+                            สาขาวิทยาการคอมพิวเตอร์เป็นสาขาวิชาที่มีโอกาสทำงานในสาขาที่มีแนวโน้มการเติบโตสูงในอนาคต
+                            เช่น เทคโนโลยีใหม่ ๆ
+                            และนวัตกรรมที่กำลังพัฒนาอย่างรวดเร็ว
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mb-3 d-flex">
+                  <div class="card h-100 w-100 d-flex flex-column">
+                    <div class="row g-0 flex-grow-1">
+                      <div class="col-md-4 d-flex align-items-center">
+                        <img
+                          src="static/image/1725868267037n454x7pb.jpg"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8 d-flex flex-column">
+                        <div class="card-body flex-grow-1">
+                          <h5 class="card-title"><u>จบแล้วมีงานทำแน่นอน</u></h5>
+                          <p class="card-text">
+                            สายอาชีพเทคโนโลยีเป็นสายอาชีพที่กำลังเติบโตอย่างต่อเนื่อง
+                            การศึกษาในสาขาเทคโนโลยีมักมีอัตราการจ้างงานสูงและความต้องการในตลาดแรงงานอย่างต่อเนื่อง
+                            ทำให้มั่นใจว่าจะมีงานทำเมื่อสำเร็จการศึกษา
+                            โดยเฉพาะในยุคปัจจุบันที่เทคโนโลยีมีบทบาทสำคัญในการพัฒนาธุรกิจและเศรษฐกิจให้ยั่งยืน
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mb-3 d-flex">
+                  <div class="card h-100 w-100 d-flex flex-column">
+                    <div class="row g-0 flex-grow-1">
+                      <div class="col-md-4 d-flex align-items-center">
+                        <img
+                          src="static/image/1725868560372zian1s5n.jpg"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8 d-flex flex-column">
+                        <div class="card-body flex-grow-1">
+                          <h5 class="card-title">
+                            <u>รายได้ที่มั่นคงและดีเยี่ยม</u>
+                          </h5>
+                          <p class="card-text">
+                            นักศึกษาสาขาวิทยาการคอมพิวเตอร์มีโอกาสที่จะได้รับรายได้ที่มั่นคง
+                            เพราะงานในด้านเทคโนโลยีมักมีค่าตอบแทนที่ดีและมั่นคง
+                            และสูงกว่าสาขาอื่นๆ
+                            มีงานที่ต้องการและตลาดงานที่กว้างขวาง
+                            ซึ่งเป็นการลงทุนที่คุ้มค่าในระยะยาว
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mb-3 d-flex">
+                  <div class="card h-100 w-100 d-flex flex-column">
+                    <div class="row g-0 flex-grow-1">
+                      <div class="col-md-4 d-flex align-items-center">
+                        <img
+                          src="static/image/1725868750967d944l5vi.jpg"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8 d-flex flex-column">
+                        <div class="card-body flex-grow-1">
+                          <h5 class="card-title">
+                            <u>ความหลากหลายและความน่าตื่นเต้นของอาชีพ</u>
+                          </h5>
+                          <p class="card-text">
+                            สาขาวิทยาการคอมพิวเตอร์มีตัวเลือกอาชีพที่หลากหลายและน่าสนใจ
+                            เช่น นักพัฒนาโปรแกรม นักวิเคราะห์ระบบ
+                            หรือผู้เชี่ยวชาญด้านข้อมูล
+                            ช่วยให้คุณสามารถเลือกเส้นทางอาชีพที่เหมาะสมกับความสนใจของคุณ
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mb-3 d-flex">
+                  <div class="card h-100 w-100 d-flex flex-column">
+                    <div class="row g-0 flex-grow-1">
+                      <div class="col-md-4 d-flex align-items-center">
+                        <img
+                          src="static/image/1725868903956i5um4ot9.jpg"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8 d-flex flex-column">
+                        <div class="card-body flex-grow-1">
+                          <h5 class="card-title">
+                            <u>การเรียนรู้และเติบโตอย่างต่อเนื่อง</u>
+                          </h5>
+                          <p class="card-text">
+                            สายอาชีพด้านเทคโนโลยีมีการพัฒนาและเปลี่ยนแปลงอย่างรวดเร็ว
+                            นักเรียนจะมีโอกาสเรียนรู้เทคโนโลยีใหม่ ๆ
+                            และพัฒนาทักษะของตนเองอย่างต่อเนื่อง
+                            ซึ่งช่วยให้พวกเขาเติบโตในอาชีพอย่างยั่งยืนและสนุกสนาน
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <div class="container py-5">
+              <div class="container text-center align-items-center">
+                <h3 class="underline">เราจะได้เรียนไรอะไรบ้าง</h3>
+              </div>
+              <hr />
+              <div class="row gx-5">
+                <div class="col-md-6 mb-3">
+                  <div class="card" style="max-width: 100%">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img
+                          src="static\image\1725814074327s0qn9tpa.jpg"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><u>Computer Networks</u></h5>
+                          <p class="card-text">
+                            ศึกษาเกี่ยวกับการเชื่อมต่อระบบคอมพิวเตอร์ผ่านเครือข่าย
+                            การส่งข้อมูล การจัดการเครือข่าย
+                            การรักษาความปลอดภัยเครือข่าย และการแก้ไขปัญหาต่าง ๆ
+                            ที่เกี่ยวข้องกับการสื่อสารข้อมูล
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="card" style="max-width: 100%">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img
+                          src="static\image\172581377178446lspgmu.jpg"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            <u>Software Engineering</u>
+                          </h5>
+                          <p class="card-text">
+                            เรียนรู้กระบวนการสร้างซอฟต์แวร์
+                            การวิเคราะห์และออกแบบระบบ การพัฒนา การทดสอบ
+                            การบำรุงรักษา และการจัดการโครงการซอฟต์แวร์
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="card" style="max-width: 100%">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img
+                          src="static\image\1725814074327iyj2tzbl.jpg"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            <u>Geographic Information System</u>
+                          </h5>
+                          <p class="card-text">
+                            การใช้เทคโนโลยีเพื่อเก็บรวบรวม วิเคราะห์
+                            และแสดงข้อมูลทางภูมิศาสตร์ การสร้างแผนที่
+                            การจัดการข้อมูลที่เกี่ยวข้องกับพื้นที่
+                            และการตัดสินใจตามข้อมูลเชิงพื้นที่
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="card" style="max-width: 100%">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img
+                          src="static\image\artificial-intelligence-logo-artificial-intelligence-machine-learning-concept-vector-symbol-ai-n_208588-2763.avif"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            <u>Artificial Intelligence</u>
+                          </h5>
+                          <p class="card-text">
+                            การศึกษาและพัฒนาเทคโนโลยีที่ทำให้คอมพิวเตอร์สามารถทำงานที่ต้องการความฉลาดเช่นเดียวกับมนุษย์
+                            เช่น การเรียนรู้ของเครื่อง การประมวลผลภาษาธรรมชาติ
+                            และการจำลองปัญญาประดิษฐ์
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- เพิ่มการ์ดเพิ่มเติมที่นี่ -->
+                <div class="col-md-6 mb-3">
+                  <div class="card" style="max-width: 100%">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img
+                          src="static\image\1725868267037n454x7pb.jpg"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><u>Data Science</u></h5>
+                          <p class="card-text">
+                            การรวบรวม วิเคราะห์
+                            และตีความข้อมูลขนาดใหญ่เพื่อให้ได้ข้อมูลเชิงลึก
+                            การใช้สถิติ การทำเหมืองข้อมูล
+                            และเทคนิคการเรียนรู้ของเครื่องเพื่อการตัดสินใจที่ดีขึ้น
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="card" style="max-width: 100%">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img
+                          src="static\image\1725868560372zian1s5n.jpg"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            <u>Information Security</u>
+                          </h5>
+                          <p class="card-text">
+                            การป้องกันข้อมูลและระบบจากการเข้าถึง การเปลี่ยนแปลง
+                            หรือการทำลายที่ไม่ได้รับอนุญาต
+                            รวมถึงการพัฒนาและดำเนินการตามนโยบายและมาตรการรักษาความปลอดภัย
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="card" style="max-width: 100%">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img
+                          src="static\image\1725868750967d944l5vi.jpg"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            <u>Computer Forensics and Cybercrime</u>
+                          </h5>
+                          <p class="card-text">
+                            การศึกษาและวิเคราะห์หลักฐานดิจิทัลเพื่อช่วยในการสืบสวนอาชญากรรมทางคอมพิวเตอร์
+                            การตรวจสอบและติดตามกิจกรรมที่ผิดกฎหมายในโลกไซเบอร์
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="card" style="max-width: 100%">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img
+                          src="static\image\1725868903956i5um4ot9.jpg"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><u>Database Systems</u></h5>
+                          <p class="card-text">
+                            การออกแบบ การจัดการ และการบำรุงรักษาระบบฐานข้อมูล
+                            การใช้ภาษาสำหรับจัดการฐานข้อมูล (เช่น SQL)
+                            และการทำงานกับข้อมูลเพื่อให้สามารถเข้าถึงและจัดการได้อย่างมีประสิทธิภาพ
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="card" style="max-width: 100%">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img
+                          src="static\image\1725871239500vrb4volb.jpg"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><u>Image Processing</u></h5>
+                          <p class="card-text">
+                            การใช้เทคนิคการประมวลผลภาพเพื่อปรับปรุงหรือดึงข้อมูลจากภาพ
+                            เช่น การกรอง การแปลง และการรู้จำรูปภาพ
+                            การใช้งานในหลากหลายด้าน เช่น การแพทย์
+                            การรักษาความปลอดภัย และการสื่อสาร
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container py-5">
+              <div class="container text-center align-items-center">
+                <h3 class="underline">จบแล้วทำอาชีพอะไรได้บ้าง</h3>
+              </div>
+              <hr />
+              <div class="row gx-5">
+                <div class="col-md-6 mb-3 d-flex">
+                  <div class="card h-100 w-100 d-flex flex-column">
+                    <div class="row g-0 flex-grow-1">
+                      <div class="col-md-4 d-flex align-items-center">
+                        <img
+                          src="static/image/1725814074327s0qn9tpa.jpg"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8 d-flex flex-column">
+                        <div class="card-body flex-grow-1">
+                          <h5 class="card-title">
+                            <u>Software Developer</u>
+                          </h5>
+                          <p class="card-text">
+                            ผู้พัฒนาและออกแบบซอฟต์แวร์ที่มีประสิทธิภาพสูง เช่น โปรแกรมคอมพิวเตอร์ แอปพลิเคชันมือถือ และเว็บไซต์
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mb-3 d-flex">
+                  <div class="card h-100 w-100 d-flex flex-column">
+                    <div class="row g-0 flex-grow-1">
+                      <div class="col-md-4 d-flex align-items-center">
+                        <img
+                          src="static/image/172581377178446lspgmu.jpg"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8 d-flex flex-column">
+                        <div class="card-body flex-grow-1">
+                          <h5 class="card-title"><u>นักวิเคราะห์ระบบ (Systems Analyst)</u></h5>
+                          <p class="card-text">
+                            ผู้วิเคราะห์ ออกแบบ และปรับปรุงระบบสารสนเทศขององค์กร
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mb-3 d-flex">
+                  <div class="card h-100 w-100 d-flex flex-column">
+                    <div class="row g-0 flex-grow-1">
+                      <div class="col-md-4 d-flex align-items-center">
+                        <img
+                          src="static/image/1725814074327iyj2tzbl.jpg"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8 d-flex flex-column">
+                        <div class="card-body flex-grow-1">
+                          <h5 class="card-title">
+                            <u>Data Scientist</u>
+                          </h5>
+                          <p class="card-text">
+                            ผู้ที่ใช้เทคโนโลยีเพื่อวิเคราะห์ข้อมูลและออกแบบโมเดลเพื่อสกัดความรู้สึกออกมาจากข้อมูล
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mb-3 d-flex">
+                  <div class="card h-100 w-100 d-flex flex-column">
+                    <div class="row g-0 flex-grow-1">
+                      <div class="col-md-4 d-flex align-items-center">
+                        <img
+                          src="static/image/artificial-intelligence-logo-artificial-intelligence-machine-learning-concept-vector-symbol-ai-n_208588-2763.avif"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8 d-flex flex-column">
+                        <div class="card-body flex-grow-1">
+                          <h5 class="card-title">
+                            <u>System Administrator</u>
+                          </h5>
+                          <p class="card-text">
+                            ผู้รับผิดชอบการจัดการและดูแลระบบคอมพิวเตอร์ในองค์กร รวมถึงการติดตั้ง ปรับปรุงและบำรุงรักษาระบบ
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mb-3 d-flex">
+                  <div class="card h-100 w-100 d-flex flex-column">
+                    <div class="row g-0 flex-grow-1">
+                      <div class="col-md-4 d-flex align-items-center">
+                        <img
+                          src="static/image/1725868267037n454x7pb.jpg"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8 d-flex flex-column">
+                        <div class="card-body flex-grow-1">
+                          <h5 class="card-title"><u>Web Designer</u></h5>
+                          <p class="card-text">
+                            ออกแบบและพัฒนาเว็บไซต์ที่สวยงามและใช้งานได้ง่าย ผู้เชี่ยวชาญด้านความ
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mb-3 d-flex">
+                  <div class="card h-100 w-100 d-flex flex-column">
+                    <div class="row g-0 flex-grow-1">
+                      <div class="col-md-4 d-flex align-items-center">
+                        <img
+                          src="static/image/1725868560372zian1s5n.jpg"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8 d-flex flex-column">
+                        <div class="card-body flex-grow-1">
+                          <h5 class="card-title">
+                            <u>Digital Marketer</u>
+                          </h5>
+                          <p class="card-text">
+                            ผู้ใช้เทคโนโลยีเพื่อสร้างและแพร่หลายแบรนด์ผ่านช่องทางออนไลน์
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mb-3 d-flex">
+                  <div class="card h-100 w-100 d-flex flex-column">
+                    <div class="row g-0 flex-grow-1">
+                      <div class="col-md-4 d-flex align-items-center">
+                        <img
+                          src="static/image/1725868750967d944l5vi.jpg"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8 d-flex flex-column">
+                        <div class="card-body flex-grow-1">
+                          <h5 class="card-title">
+                            <u>UX/UI Designer</u>
+                          </h5>
+                          <p class="card-text">
+                            ผู้ออกแบบประสบการณ์ผู้ใช้และอินเตอร์เฟสผู้ใช้เพื่อให้การใช้งานสะดวกสบายและมีประสิทธิภาพ
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mb-3 d-flex">
+                  <div class="card h-100 w-100 d-flex flex-column">
+                    <div class="row g-0 flex-grow-1">
+                      <div class="col-md-4 d-flex align-items-center">
+                        <img
+                          src="static/image/1725868903956i5um4ot9.jpg"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8 d-flex flex-column">
+                        <div class="card-body flex-grow-1">
+                          <h5 class="card-title">
+                            <u>Technology Researcher</u>
+                          </h5>
+                          <p class="card-text">
+                            ผู้ศึกษาและวิจัยเทคโนโลยีใหม่ ๆ เพื่อพัฒนาและปรับปรุงระบบด้านเทคโลโลยี
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+
       {% endblock curriculum %}
 
       <!--finish-->
@@ -114,250 +829,428 @@
       {% block studentwork %}
       <div class="container" id="studentwork5">
         <!--content-->
+    
         <h5 class="fw-bold fs-2 my-4">ศิษย์เก่า สาขาวิทยาการคอมพิวเตอร์</h5>
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <ol class="carousel-indicators">
-            <li
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-            ></li>
-            <li
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-            ></li>
-            <li
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-            ></li>
-            <li
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="3"
-            ></li>
-            <li
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="4"
-            ></li>
-            <li
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="5"
-            ></li>
-            <li
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="6"
-            ></li>
-            <li
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="7"
-            ></li>
-            <li
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="8"
-            ></li>
-            <li
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="9"
-            ></li>
-          </ol>
-          {% comment %} ตรงนี้เป็นจุดเริ่ม carousel {% endcomment %}
+        <div id="carouselExample" class="carousel slide">
           <div class="carousel-inner">
-            <div class="carousel-item active d-flex justify-content-center">
-              <div class="card" style="width: 30rem">
-                <img
-                  src="static/image/student1.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
+              <div class="carousel-item active">
+                  <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
+                      <div class="card" style="width: 19rem;">
+                          <img src="static\image\student1.jpg" class="card-img-top" alt="...">
+                          
+                      </div>
+                  </div>
               </div>
-            </div>
-            <div class="carousel-item d-flex justify-content-center">
-              <div class="card" style="width: 30rem">
-                <img
-                  src="static/image/student2.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
+              <div class="carousel-item">
+                  <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
+                      <div class="card" style="width: 19rem;">
+                          <img src="static\image\student2.jpg" class="card-img-top" alt="...">
+                      </div>
+                  </div>
               </div>
-            </div>
-            <div class="carousel-item d-flex justify-content-center">
-              <div class="card" style="width: 30rem">
-                <img
-                  src="static/image/student3.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
+              <div class="carousel-item">
+                  <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
+                      <div class="card" style="width: 19rem;">
+                          <img src="static\image\student3.jpg" class="card-img-top" alt="...">
+                      </div>
+                  </div>
               </div>
-            </div>
-            <div class="carousel-item d-flex justify-content-center">
-              <div class="card" style="width: 30rem">
-                <img
-                  src="static/image/student4.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
+              <div class="carousel-item">
+                  <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
+                      <div class="card" style="width: 19rem;">
+                          <img src="static\image\student4.jpg" class="card-img-top" alt="...">
+                      </div>
+                  </div>
               </div>
-            </div>
-            <div class="carousel-item d-flex justify-content-center">
-              <div class="card" style="width: 30rem">
-                <img
-                  src="static/image/student5.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
+              <div class="carousel-item">
+                  <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
+                      <div class="card" style="width: 19rem;">
+                          <img src="static\image\student5.jpg" class="card-img-top" alt="...">
+                      </div>
+                  </div>
               </div>
-            </div>
-            <div class="carousel-item d-flex justify-content-center">
-              <div class="card" style="width: 30rem">
-                <img
-                  src="static/image/student6.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
+              <div class="carousel-item">
+                  <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
+                      <div class="card" style="width: 19rem;">
+                          <img src="static\image\student6.jpg" class="card-img-top" alt="...">
+                      </div>
+                  </div>
               </div>
-            </div>
-            <div class="carousel-item d-flex justify-content-center">
-              <div class="card" style="width: 30rem">
-                <img
-                  src="static/image/student7.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
+              <div class="carousel-item">
+                  <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
+                      <div class="card" style="width: 19rem;">
+                          <img src="static\image\student7.jpg" class="card-img-top" alt="...">
+                      </div>
+                  </div>
               </div>
-            </div>
-            <div class="carousel-item d-flex justify-content-center">
-              <div class="card" style="width: 30rem">
-                <img
-                  src="static/image/student8.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
+              <div class="carousel-item">
+                  <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
+                      <div class="card" style="width: 19rem;">
+                          <img src="static\image\student8.jpg" class="card-img-top" alt="...">
+                      </div>
+                  </div>
               </div>
-            </div>
-            <div class="carousel-item d-flex justify-content-center">
-              <div class="card" style="width: 30rem">
-                <img
-                  src="static/image/student9.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
+              <div class="carousel-item">
+                  <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
+                      <div class="card" style="width: 19rem;">
+                          <img src="static\image\student9.jpg" class="card-img-top" alt="...">
+                      </div>
+                  </div>
               </div>
-            </div>
-            <div class="carousel-item d-flex justify-content-center">
-              <div class="card" style="width: 30rem">
-                <img
-                  src="static/image/student10.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-              </div>
-            </div>
+              <!-- เพิ่ม carousel-item อื่นๆ ตามต้องการ -->
           </div>
-          <a
-            class="carousel-control-prev"
-            href="#carouselExampleIndicators"
-            role="button"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+          <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
           </a>
-          <a
-            class="carousel-control-next"
-            href="#carouselExampleIndicators"
-            role="button"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+          <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
           </a>
-        </div>
+      </div>
+    
         <!--เนื้อหาผลงานนักศึกษา-->
         <h5 class="fw-bold fs-2 my-4">ผลงานนักศึกษา</h5>
         <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-12 col-md-4 mb-4">
-              <div
-                class="card h-100 d-flex flex-column mx-auto"
-                style="width: 100%"
-              >
-                <img
-                  src="static/image/studentwork2.jpg"
-                  class="card-img-top"
-                  alt="Student Work"
-                />
-                <div class="card-body">
-                  <h5 class="card-title fw-bold">movie infomation</h5>
-                  <p class="card-text">
-                    แอปหาข้อมูลหนังด้วย api tmdb จากนักศึกษาชั้นปีที่3,2,1
-                    เป็นprojectงาน hackathon swift coding
-                  </p>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100 d-flex flex-column mx-auto" style="width: 100%">
+                        <img src="static/image/studentwork2.jpg" class="card-img-top" alt="Student Work"/>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">movie infomation</h5>
+                            <p class="card-text">
+                                แอปหาข้อมูลหนังด้วย api tmdb จากนักศึกษาชั้นปีที่3,2,1
+                                เป็นprojectงาน hackathon swift coding
+                            </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-4 mb-4">
-              <div
-                class="card h-100 d-flex flex-column mx-auto"
-                style="width: 100%"
-              >
-                <a href="https://www.sisaket-charity.net/" target="_blank">
-                  <img
-                    src="static/image/studentwork1.jpg"
-                    class="card-img-top"
-                    alt="Student Work"
-                  />
-                </a>
-                <div class="card-body">
-                  <h5 class="card-title fw-bold">เสื้อเฉลิมฉลองเมือง 242 ปี</h5>
-                  <p class="card-text">
-                    ระบบสำหรับสั่งจองฉลองเมือศรีสะเกษ​ 242 ปี พัฒนาโดย
-                    ผู้ช่วยศาสตราจารย์พิศาล สุขขี และนักศึกษาชั้นปีที่ 3 ของ
-                    สาขาวิชาวิทยาการคอมพิวเตอร์
-                  </p>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100 d-flex flex-column mx-auto" style="width: 100%">
+                        <a href="https://www.sisaket-charity.net/" target="_blank">
+                            <img src="static/image/studentwork1.jpg" class="card-img-top" alt="Student Work"/>
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">เสื้อเฉลิมฉลองเมือง 242 ปี</h5>
+                            <p class="card-text">
+                                ระบบสำหรับสั่งจองฉลองเมือศรีสะเกษ​ 242 ปี พัฒนาโดย
+                                ผู้ช่วยศาสตราจารย์พิศาล สุขขี และนักศึกษาชั้นปีที่ 3 ของ
+                                สาขาวิชาวิทยาการคอมพิวเตอร์
+                            </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-4 mb-4">
-              <div
-                class="card h-100 d-flex flex-column mx-auto"
-                style="width: 100%"
-              >
-                <img
-                  src="static/image/studentwork3.jpg"
-                  class="card-img-top"
-                  alt="Student Work"
-                />
-                <div class="card-body">
-                  <h5 class="card-title fw-bold">น้องลำดวน</h5>
-                  <p class="card-text">
-                    โปรเจคคณาจารย์พัฒนาร่วมกันกับนักศึกษาในสาขาวิทยาการคอมพิวเตอร์
-                    สู่การใช้งานเพื่อการส่งเสริมการท่องเที่ยวในจังหวัดศรีสะเกษ
-                    ในฐานะ 1 ใน 10 เมืองรองต้องเที่ยว
-                  </p>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100 d-flex flex-column mx-auto" style="width: 100%">
+                        <img src="static/image/studentwork3.jpg" class="card-img-top" alt="Student Work"/>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">น้องลำดวน</h5>
+                            <p class="card-text">
+                                โปรเจคคณาจารย์พัฒนาร่วมกันกับนักศึกษาในสาขาวิทยาการคอมพิวเตอร์
+                                สู่การใช้งานเพื่อการส่งเสริมการ...
+                            </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
+    
       {% endblock studentwork %}
 
       <!--activity-->
       {% block activity %}
+
       <div class="container" id="activity1">
         <!--content-->
         <h1>activity</h1>
+
+      <div class="container px-4 px-lg-5 mb-4" id="activity1">
+        <div class="feature-grid">
+          <div class="feature-card">
+            <img
+              src="static\image\450055683_863892982450981_151007795583764724_n.jpg"
+              class="img-thumbnail"
+              alt="..."
+            />
+            <h3>กิจกรรมของสาขาเรา</h3>
+            <p>
+              ssk robotic
+              โดยการจัดงานครั้งนี้มีผู้เข้าร่วมการแข่งขันจากทั่วประเทศ
+              ซึ่งมีจำนวนทั้งสิ้น 1,546 คน แบ่งออกเป็น ผู้ฝึกสอน 568 คน และ
+              นักเรียน 978 คน โดยมีทีมเข้าร่วมทั้งสิ้น 481 ทีม
+              และนอกจากนี้นักศึกษาในสาขาวิชาวิทยาการคอมพิวเตอร์
+              ได้เป็นส่วนสำคัญในการจัดเตรียมงานต่าง ๆ
+              ตลอดจนรับหน้าที่เป็นผู้ตัดสินให้คะแนน ในการแข่งขันอีกด้วย
+            </p>
+          </div>
+          <div class="feature-card">
+            <img
+              src="static\image\456030320_892031239637155_3033459481031134068_n.jpg"
+              class="img-thumbnail"
+              alt="..."
+            />
+            <div class="feature-icon"></div>
+            <h3>กิจกรรมของสาขาเรา</h3>
+            <p>
+              โดยกิจกรรมที่จัดขึ้นเมื่อวันที่ 16 สิงหาคม 2567 ณ ห้อง 4408
+              คณะศิลปศาสตร์และวิทยาศาสตร์ ประสบความสำเร็จอย่างงดงาม
+              ด้วยทีมเข้าร่วมทั้งสิ้น 45 ทีม แบ่งเป็นรุ่น Junior, Senior และ
+              Senior Open ทั้งหมด 3 รุ่น มีน้อง ๆ เข้าร่วมกว่า 1 ร้อยชีวิต ..
+              ทางสาขาวิชา ขอแสดงความยินดีกับน้อง ๆ ผู้ได้รับรางวัลทุก ๆ ท่าน
+              และขอชื่นชมกับความพยายามของทุกทีมที่ร่วมแข่งขัน ความคิดสร้างสรรค์
+              และทักษะของน้อง ๆ ที่นำมาใช้ในการแข่งขันในครั้งนี้
+            </p>
+          </div>
+          <div class="feature-card">
+            <img
+              src="static\image\qrcode_125355908_e7edc0e3789a98c6e7cc24f7eb938987.png"
+              class="img-thumbnail"
+              alt="..."
+            />
+            <div class="feature-icon"></div>
+            <h3>ดูเพิ่มเติม</h3>
+            <p>SCANME</p>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="container px-4 px-lg-5">
+        <div class="feature-grid">
+          <div class="feature-card">
+            <img
+              src="static\image\453246140_879399800900299_7885944663998061476_n.jpg"
+              class="img-thumbnail"
+              alt="..."
+            />
+            <div class="feature-icon"></div>
+            <h3>กิจกรรมอบรม</h3>
+            <p>
+              สาขาวิทยาการคอมพิวเตอร์ จับมือกับ บริษัท IMAKE Innovation และ
+              หอการค้าจังหวัดศรีสะเกษ
+              ร่วมมือกันพัฒนาเยาวชนของจังหวัดศรีสะเกษเพื่อต่อยอด สู่การแข่งขัน
+              Arduino Education Day Thailand 2024 .. ด้วยการจัดอบรม Arduino
+              Student Kit ฟิสิกส์สัประยุทธ์ ณ ห้อง 4408
+              คณะศิลปศาสตร์และวิทยาศาสตร์ มหาวิทยาลัยราชภัฏศรีสะเกษ ในวันที่ 27
+              - 28 ก.ค. 2567 โดยมีน้อง ๆ นักเรียนเข้าร่วมการอบรมกว่า 200 คน
+            </p>
+          </div>
+          <div class="feature-card">
+            <iframe
+              src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fcomsci.sskru%2Fvideos%2F480398971598042%2F&show_text=false&width=267&t=0"
+              width="267"
+              height="476"
+              style="border: none; overflow: hidden"
+              scrolling="no"
+              frameborder="0"
+              allowfullscreen="true"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              allowfullscreen="true"
+            ></iframe>
+            <div class="feature-icon"></div>
+            <h3>กิจกรรมอบรม</h3>
+            <p>Swif coding</p>
+          </div>
+          <div class="feature-card">
+            <iframe
+              src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F247180088225387%2F&show_text=false&width=267&t=0"
+              width="267"
+              height="476"
+              style="border: none; overflow: hidden"
+              scrolling="no"
+              frameborder="0"
+              allowfullscreen="true"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              allowfullscreen="true"
+            ></iframe>
+            <div class="feature-icon"></div>
+            <h3>กิจกรรมอบรม</h3>
+            <p>ความรู้และทักษะทางด้านดิจิทัลให้โรงเรียนวัดหลวงวิทยา</p>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="container px-4 px-lg-5">
+        <div class="feature-grid">
+          <div class="feature-card">
+            <img src="static\image\451093020_361438926980574_4049424285477342336_n.jpg" class="img-thumbnail" alt="...">
+            <div class="feature-icon"></div>
+            <h3>กิจกรรมรับน้องสาขาเรา</h3>
+            <p></p>
+          </div>
+          <div class="feature-card">
+            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fcomsci.sskru%2Fvideos%2F1143664050269365%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+            <div class="feature-icon"></div>
+            <h3>กิจกรรมรับน้องสาขาเรา</h3>
+            <p>เพิ่มเติม</p>
+         
+        </div>
       </div>
       {% endblock activity %}
 
       <!--contact-->
       {% block contact %}
-      <div class="container" id="contact2">
-        <!--content-->
-        <h1>contact</h1>
+        <div class="container" id="contact2">
+        <h1>ติดต่อเรา</h1>
+        <hr />
+        <h2 class="empty-line"></h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- แถวติดต่อ (ซ้ายสุด) -->
+          <div class="col text-center">
+            <div class="contact-item">
+              <div class="contact-icon-text">
+                <img
+                  src="https://img.icons8.com/?size=256w&id=tuSyDA4Jkbyh&format=png&color=FFFFFF"
+                  class="contact-icon"
+                  alt="โทรศัพท์"
+                />
+                <p><strong>โทรศัพท์:</strong> (+66) 045-643-600-5</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-text">
+                <img
+                  src="https://img.icons8.com/?size=256w&id=j9BCUGfss2SX&format=png&color=FFFFFF"
+                  class="contact-icon"
+                  alt="โทรศัพท์มือถือ"
+                />
+                <p><strong>โทรศัพท์มือถือ:</strong> 084-298-2456</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-text">
+                <img
+                  src="https://img.icons8.com/?size=256w&id=dCRS0LsfeSHc&format=png&color=FFFFFF"
+                  class="contact-icon"
+                  alt="Facebook"
+                />
+                <p>
+                  <strong>Facebook:</strong>
+                  <a
+                    href="https://www.facebook.com/comsci.sskru"
+                    target="_blank"
+                    >วิทยาการคอมพิวเตอร์</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-text">
+                <img
+                  src="https://img.icons8.com/?size=256w&id=2963&format=png&color=FFFFFF"
+                  class="contact-icon"
+                  alt="เว็บไซต์"
+                />
+                <p>
+                  <strong>เว็บไซต์:</strong>
+                  <a href="https://www.sskru.ac.th">sskru.ac.th</a>
+                </p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-text">
+                <img
+                  src="https://img.icons8.com/?size=256w&id=124379&format=png&color=FFFFFF"
+                  class="contact-icon"
+                  alt="อีเมล"
+                />
+                <p>
+                  <strong>อีเมล:</strong>
+                  <a href="mailto:webmaster@sskru.ac.th"
+                    >webmaster@sskru.ac.th</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-text">
+                <img
+                  src="https://img.icons8.com/?size=256w&id=7880&format=png&color=FFFFFF"
+                  class="contact-icon"
+                  alt="ที่อยู่"
+                />
+                <p>
+                  <strong>ที่อยู่:</strong>
+                  <a
+                    href="https://maps.app.goo.gl/oKurKgPixATmhneMA"
+                    target="_blank"
+                    >มหาวิทยาลัยราชภัฏศรีสะเกษ</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- แถวคุณสมบัติผู้สมัคร (กลาง) -->
+          <div class="col">
+            <h3 class="fw-semibold">#คุณสมบัติผู้สมัคร</h3>
+            <div class="m-auto row row-cols-1 gx-5">
+              <div class="col">
+                <ul style="list-style: none">
+                  <li>
+                    <b class="fs-5">จบการศึกษาในระดับ</b>
+                    <ul>
+                      <li>มัธยมศึกษาตอนปลาย</li>
+                      <li>ปวช. ปวส.</li>
+                      <li>ปริญญาตรีทุกสาขา</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- แถว QR (ขวาสุด) -->
+          <div class="col text-center">
+            <h3 style="margin-bottom: 15px">
+              สแกน QR Code เพื่อติดตามข่าวสารและข้อมูลเพิ่มเติม
+            </h3>
+            <div class="qr-section" style="margin-bottom: 20px">
+              <div class="contact-item">
+                <img
+                  src="https://comsci-sskru.web.app/assets/S_gainfriends_2dbarcodes_GW-CjIeyaYr.png"
+                  alt="QR Code"
+                  class="qr-code"
+                  style="
+                    width: 120px;
+                    height: auto;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                  "
+                />
+              </div>
+              <div class="contact-item">
+                <img
+                  src="https://comsci-sskru.web.app/assets/TItok-CH74RJSP.png"
+                  alt="QR Code"
+                  class="qr-code"
+                  style="
+                    width: 200px;
+                    height: auto;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                  "
+                />
+              </div>
+              <div class="contact-item">
+                <img
+                  src="https://comsci-sskru.web.app/assets/FacebookLogo-D-ZSw0wB.png"
+                  alt="QR Code"
+                  class="qr-code"
+                  style="
+                    width: 200px;
+                    height: auto;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                  "
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       {% endblock contact %} {% block content %}
       <!--no tuch-->

@@ -26,7 +26,7 @@ html {
 
 header {
     background-color: var(--color-gray);
-    padding: 30px 0;
+    padding: 20px 0; /* ลด padding */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -36,46 +36,41 @@ nav {
     align-items: center;
 }
 
-/* ไฟล์ CSS ของคุณ */
 #mainNav .logo-container .navbar-brand {
     color: var(--color-orange);
-    /* สีส้ม */
 }
+
 /* ปุ่มเมนูใน navbar */
 .navbar-toggler {
-    color: white; /* สีพื้นหลังของปุ่มเมนู */
-    border:2px solid var(--color-orange); /* ไม่มีกรอบ */
+    color: white;
+    border: 2px solid var(--color-orange);
     border-radius: 5px;
 }
 
-/* สไตล์ของลิงก์ใน navbar */
+/* ลิงก์ใน navbar */
 .navbar-nav .nav-link {
     color: white;
-    /* ทำให้ลิงก์เป็นสีขาว */
+    margin-right: 15px; /* เพิ่มระยะห่างระหว่างลิงก์ */
     transition: color 0.3s ease;
-    /* ทำให้การเปลี่ยนสีลื่นไหล */
 }
 
 /* สีลิงก์เมื่อโฮเวอร์ */
-.navbar-nav .nav-link:hover {
-    color: var(--color-highlight);
-    /* เปลี่ยนสีเมื่อเอาเมาส์ไปวาง (หากต้องการ) */
-}
-
-/* สีลิงก์ในสถานะที่ถูกเลือก */
+.navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-    color: var(--color-highlight);
-    /* สีลิงก์เมื่ออยู่ในสถานะ active (หากต้องการ) */
-}
-
-
-.nav-links a:hover {
     color: var(--color-orange);
 }
 
+/* ปุ่มใน navbar */
+.navbar-nav .btn-primary {
+    margin-left: 20px; /* ระยะห่างจากลิงก์ */
+    background-color: #0066FF;
+    color: white;
+}
+
+/* ส่วนของ hero */
 .hero {
     background: linear-gradient(45deg, var(--color-gray), var(--color-dark));
-    padding: 100px 0;
+    padding: 80px 0; /* ลด padding ของ hero section */
     text-align: center;
 }
 
@@ -105,10 +100,6 @@ h1 {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
 }
-.btn-primary{
-    background-color:#0066FF;
-    color: white;
-}
 
 .features {
     padding: 80px 0;
@@ -133,12 +124,6 @@ h1 {
     transform: translateY(-10px);
 }
 
-.feature-icon {
-    font-size: 2.5em;
-    color: var(--color-orange);
-    margin-bottom: 20px;
-}
-
 footer {
     background-color: var(--color-gray);
     text-align: center;
@@ -146,83 +131,159 @@ footer {
     margin-top: 40px;
 }
 
-/* สไตล์เริ่มต้นของ navbar */
+/* navbar เปลี่ยนสีเมื่อเลื่อน */
 #mainNav {
     background-color: transparent;
     transition: background-color 0.3s ease;
 }
 
-/* เมื่อมีคลาส 'scrolled' */
 #mainNav.scrolled {
     background-color: var(--color-orange);
-    /* เปลี่ยนเป็นสีส้ม */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* เพิ่มเงา */
 }
 
-/* โลโก้ในสถานะปกติ */
-.logo {
+#mainNav .logo-container .navbar-brand {
     color: var(--color-orange);
-    /* สีปกติ */
     transition: color 0.3s ease;
-    /* ทำให้เปลี่ยนสีได้ลื่นไหล */
 }
 
-/* เปลี่ยนสีโลโก้เมื่อ navbar มีคลาส 'scrolled' */
-#mainNav.scrolled .logo {
-    color: var(--color-dark);
-    /* สีโลโก้หลังเลื่อน */
-}
-
-/* จัดการตำแหน่งของรูปโลโก้และข้อความ */
-.logo-container {
-    display: flex;
-    /* ทำให้รูปและข้อความอยู่ในแนวเดียวกัน */
-    align-items: center;
-    /* จัดให้อยู่กลางในแนวตั้ง */
-}
-
-/* ปรับขนาดและระยะห่างของโลโก้ */
-.logo-container img {
-    margin-right: 10px;
-    /* เพิ่มช่องว่างระหว่างรูปกับข้อความ */
-}
-
-/* ปรับการจัดตำแหน่งของข้อความ */
-.logo-container .navbar-brand {
-    font-size: 1.5rem;
-    /* ขนาดของข้อความ */
-    font-weight: bold;
-    /* หนักตัวอักษร */
-    color: var(--color-orange);
-    /* สีของข้อความ */
-    transition: color 0.3s ease;
-    /* ทำให้เปลี่ยนสีได้ลื่นไหล */
-}
-
-/* เมื่อ navbar เลื่อนลง */
 #mainNav.scrolled .logo-container .navbar-brand {
     color: var(--color-dark);
-    /* สีข้อความหลังจากเลื่อน */
-}
-.carousel-item {
-    opacity: 0; /* ซ่อนการ์ดทั้งหมด */
-    position: absolute; /* ใช้ absolute เพื่อป้องกันการเปลี่ยนตำแหน่ง */
-    transition: opacity 0.5s ease-in-out;
-    width: 100%; /* ให้การ์ดมีขนาดเต็มพื้นที่ */
-    height: 100%; /* ให้การ์ดมีขนาดเต็มพื้นที่ */
 }
 
-.carousel-item.active {
-    opacity: 1; /* แสดงเฉพาะการ์ดที่ active */
-    position: relative; /* เปลี่ยนกลับเป็น relative */
-    z-index: 1;
+.logo-container {
+    display: flex;
+    align-items: center;
 }
 
-.carousel-inner {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
+.logo-container img {
+    margin-right: 10px;
 }
+
+
+/* เวลาเอา เมาส์ไปวาง ทำให้การ์ด ขยายอย่างนุ่มนวล */
+.card{
+    transition: transform 0.3s ease;
+}
+
+/* ทำให้การ์ดขยาย */
+.card:hover{
+    transform: scale(1.025);
+}
+.underline{
+    text-decoration: underline;
+    text-decoration-color: #ff6b35;
+}
+/* CSS ของ Contact */
+        #contact2 {
+          padding: 20px;
+          margin-bottom: 20px;
+        }
+
+        .row {
+          margin-right: -15px;
+          margin-left: -15px;
+        }
+
+        .col {
+          padding-right: 15px;
+          padding-left: 15px;
+        }
+
+        .contact-item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px;
+        }
+
+        .contact-icon {
+          margin-right: 10px;
+          width: 36px;
+          height: 36px;
+        }
+
+        .contact-icon-text {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .contact-item p {
+          margin: 0;
+        }
+
+        .qr-col {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+        }
+
+        .qr-code {
+          width: 150px;
+          height: 150px;
+        }
+
+        .empty-line {
+          height: 40px;
+          margin: 20px 0;
+        }
+        
+
+        /* CSS ของ Contact */
+
+#contact2 {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .col {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .contact-icon {
+    margin-right: 10px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .contact-icon-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-item p {
+    margin: 0;
+  }
+
+  .qr-col {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .qr-code {
+    width: 150px;
+    height: 150px;
+  }
+
+  .empty-line {
+    height: 40px;
+    margin: 20px 0;
+  }
+      /* สีข้อความหลังจากเลื่อน */
+
+
 
