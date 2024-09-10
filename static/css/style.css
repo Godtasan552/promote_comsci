@@ -205,58 +205,24 @@ footer {
     color: var(--color-dark);
     /* สีข้อความหลังจากเลื่อน */
 }
-/* CSS ของ Contact */
-        #contact2 {
-          padding: 20px;
-          margin-bottom: 20px;
-        }
+.carousel-item {
+    opacity: 0; /* ซ่อนการ์ดทั้งหมด */
+    position: absolute; /* ใช้ absolute เพื่อป้องกันการเปลี่ยนตำแหน่ง */
+    transition: opacity 0.5s ease-in-out;
+    width: 100%; /* ให้การ์ดมีขนาดเต็มพื้นที่ */
+    height: 100%; /* ให้การ์ดมีขนาดเต็มพื้นที่ */
+}
 
-        .row {
-          margin-right: -15px;
-          margin-left: -15px;
-        }
+.carousel-item.active {
+    opacity: 1; /* แสดงเฉพาะการ์ดที่ active */
+    position: relative; /* เปลี่ยนกลับเป็น relative */
+    z-index: 1;
+}
 
-        .col {
-          padding-right: 15px;
-          padding-left: 15px;
-        }
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
 
-        .contact-item {
-          display: flex;
-          align-items: center;
-          margin-bottom: 20px;
-        }
-
-        .contact-icon {
-          margin-right: 10px;
-          width: 36px;
-          height: 36px;
-        }
-
-        .contact-icon-text {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-
-        .contact-item p {
-          margin: 0;
-        }
-
-        .qr-col {
-          display: flex;
-          justify-content: flex-end;
-          align-items: center;
-        }
-
-        .qr-code {
-          width: 150px;
-          height: 150px;
-        }
-
-        .empty-line {
-          height: 40px;
-          margin: 20px 0;
-        }
-        /* CSS ของ Contact */
-      
