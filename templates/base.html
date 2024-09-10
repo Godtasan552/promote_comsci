@@ -52,10 +52,7 @@
                 <a class="nav-link" href="#home">หน้าหลัก</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#curriculum3">หลักสูตร</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#finish4">จบแล้วทำอาชีพอะไรได้บ้าง</a>
+                <a class="nav-link" href="#curriculum3">เราจะได้เรียนอะไรบ้าง </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#studentwork5">ผลงานนักศึกษา</a>
@@ -150,13 +147,14 @@
               <hr />
               <div class="row gx-5">
                 <div class="col-md-6 mb-3 d-flex">
-                  <div class="card h-100 w-100 d-flex flex-column">
+                  <div class="card h-100 w-100 d-flex flex-column" style="overflow: hidden;">
                     <div class="row g-0 flex-grow-1">
                       <div class="col-md-4 d-flex align-items-center">
                         <img
-                          src="static/image/1725814074327s0qn9tpa.jpg"
+                          src="static\image\icones-de-financas-icones-de-negocios-de-gestao-de-dinheiro-sinais-de-dinheiro_1150-64359.jpg"
                           class="img-fluid rounded-start"
                           alt="..."
+                          style="object-fit: cover; width: 100%; height: 100%;"
                         />
                       </div>
                       <div class="col-md-8 d-flex flex-column">
@@ -166,9 +164,7 @@
                           </h5>
                           <p class="card-text">
                             เนื่องจากเป็นประเภทวิชาและสาขาที่เป็นความต้องการหลักและมีความชัดเจนของการผลิตกำลังคน
-                            สำหรับนิสิต นักศึกษา
-                            สามารถขอรับเงินกู้จากกองทุนการศึกษาเพื่อการศึกษา
-                            (กยศ) ได้เต็มจำนวน 100%
+                            สำหรับนิสิต นักศึกษา สามารถขอรับเงินกู้จากกองทุนการศึกษาเพื่อการศึกษา (กยศ) ได้เต็มจำนวน 100%
                             ซึ่งช่วยลดภาระค่าใช้จ่ายในการศึกษา
                           </p>
                         </div>
@@ -176,13 +172,14 @@
                     </div>
                   </div>
                 </div>
+        
 
                 <div class="col-md-6 mb-3 d-flex">
                   <div class="card h-100 w-100 d-flex flex-column">
                     <div class="row g-0 flex-grow-1">
                       <div class="col-md-4 d-flex align-items-center">
                         <img
-                          src="static/image/172581377178446lspgmu.jpg"
+                          src="static\image\62b1f5663ef1f141d8e9f804d4fe476e.jpg"
                           class="img-fluid rounded-start"
                           alt="..."
                         />
@@ -206,7 +203,7 @@
                     <div class="row g-0 flex-grow-1">
                       <div class="col-md-4 d-flex align-items-center">
                         <img
-                          src="static/image/1725814074327iyj2tzbl.jpg"
+                          src="static\image\Top 5 Technology Trends of 2022.png"
                           class="img-fluid rounded-start"
                           alt="..."
                         />
@@ -233,7 +230,7 @@
                     <div class="row g-0 flex-grow-1">
                       <div class="col-md-4 d-flex align-items-center">
                         <img
-                          src="static/image/artificial-intelligence-logo-artificial-intelligence-machine-learning-concept-vector-symbol-ai-n_208588-2763.avif"
+                          src="static\image\d3b0fc387063d00b65c32fedf7de01a6.jpg"
                           class="img-fluid rounded-start"
                           alt="..."
                         />
@@ -259,7 +256,7 @@
                     <div class="row g-0 flex-grow-1">
                       <div class="col-md-4 d-flex align-items-center">
                         <img
-                          src="static/image/1725868267037n454x7pb.jpg"
+                          src="static\image\ab9e584355344a94e7825e752a2e9410.jpg"
                           class="img-fluid rounded-start"
                           alt="..."
                         />
@@ -284,7 +281,7 @@
                     <div class="row g-0 flex-grow-1">
                       <div class="col-md-4 d-flex align-items-center">
                         <img
-                          src="static/image/1725868560372zian1s5n.jpg"
+                          src="static\image\b9e0d897bbbb7324e8d395a92f90c4ac.jpg"
                           class="img-fluid rounded-start"
                           alt="..."
                         />
@@ -312,7 +309,7 @@
                     <div class="row g-0 flex-grow-1">
                       <div class="col-md-4 d-flex align-items-center">
                         <img
-                          src="static/image/1725868750967d944l5vi.jpg"
+                          src="static\image\65a22ae85aecaef73ab8e0ecb6a1f800.jpg"
                           class="img-fluid rounded-start"
                           alt="..."
                         />
@@ -339,7 +336,7 @@
                     <div class="row g-0 flex-grow-1">
                       <div class="col-md-4 d-flex align-items-center">
                         <img
-                          src="static/image/1725868903956i5um4ot9.jpg"
+                          src="static\image\2045e5dc8a51dbe0f24a0af486d1986f.jpg"
                           class="img-fluid rounded-start"
                           alt="..."
                         />
@@ -817,14 +814,8 @@
 
       {% endblock curriculum %}
 
-      <!--finish-->
-      {% block finish %}
-      <div class="container" id="finish4">
-        <!--content-->
-        <h1>finish</h1>
-      </div>
-      {% endblock finish %}
 
+      
       <!--studentwork-->
       {% block studentwork %}
       <div class="container" id="studentwork5">
@@ -961,11 +952,12 @@
       <!--activity-->
       {% block activity %}
 
-      <div class="container" id="activity1">
+      <div class="container" >
         <!--content-->
-        <h1>activity</h1>
+        
 
       <div class="container px-4 px-lg-5 mb-4" id="activity1">
+        <h3>กิจกรรมและข่าวสาร</h3>
         <div class="feature-grid">
           <div class="feature-card">
             <img
@@ -1003,14 +995,10 @@
             </p>
           </div>
           <div class="feature-card">
-            <img
-              src="static\image\qrcode_125355908_e7edc0e3789a98c6e7cc24f7eb938987.png"
-              class="img-thumbnail"
-              alt="..."
-            />
+            <iframe width="260" height="250" src="https://www.youtube.com/embed/0S7FfjL_SHc?si=JwKYmwcA-74yg6M1&amp;start=12" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <div class="feature-icon"></div>
-            <h3>ดูเพิ่มเติม</h3>
-            <p>SCANME</p>
+            <h5>กิจกรรมประกวดดาวเดือน คณะศิลปะศาสตร์และวิทยาศาสตร์</h5>
+            <p>Swif coding</p>
           </div>
         </div>
       </div>
@@ -1087,9 +1075,25 @@
         </div>
       </div>
       {% endblock activity %}
+      <hr>
+      
+      {% block content %}
+      <!--no tuch-->
+      {% endblock content %}
 
       <!--contact-->
       {% block contact %}
+      <h3>ตึกคณะวิทยาศาสตร์และวิทยาศาสตร์</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1715.7551734994745!2d104.36074916275084!3d15.11765020256951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3116e345ffdbda1d%3A0xa98fedd9d438f097!2z4LiE4LiT4Liw4Lio4Li04Lil4Lib4Lio4Liy4Liq4LiV4Lij4LmM4LmB4Lil4Liw4Lin4Li04LiX4Lii4Liy4Lio4Liy4Liq4LiV4Lij4LmMIOC4oeC4q-C4suC4p-C4tOC4l-C4ouC4suC4peC4seC4ouC4o-C4suC4iuC4oOC4seC4j-C4qOC4o-C4teC4quC4sOC5gOC4geC4qQ!5e0!3m2!1sth!2sth!4v1725897645275!5m2!1sth!2sth"
+        width="500"
+        height="350"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
         <div class="container" id="contact2">
         <h1>ติดต่อเรา</h1>
         <hr />
@@ -1200,62 +1204,13 @@
             </div>
           </div>
 
-          <!-- แถว QR (ขวาสุด) -->
-          <div class="col text-center">
-            <h3 style="margin-bottom: 15px">
-              สแกน QR Code เพื่อติดตามข่าวสารและข้อมูลเพิ่มเติม
-            </h3>
-            <div class="qr-section" style="margin-bottom: 20px">
-              <div class="contact-item">
-                <img
-                  src="https://comsci-sskru.web.app/assets/S_gainfriends_2dbarcodes_GW-CjIeyaYr.png"
-                  alt="QR Code"
-                  class="qr-code"
-                  style="
-                    width: 120px;
-                    height: auto;
-                    display: block;
-                    margin-left: auto;
-                    margin-right: auto;
-                  "
-                />
-              </div>
-              <div class="contact-item">
-                <img
-                  src="https://comsci-sskru.web.app/assets/TItok-CH74RJSP.png"
-                  alt="QR Code"
-                  class="qr-code"
-                  style="
-                    width: 200px;
-                    height: auto;
-                    display: block;
-                    margin-left: auto;
-                    margin-right: auto;
-                  "
-                />
-              </div>
-              <div class="contact-item">
-                <img
-                  src="https://comsci-sskru.web.app/assets/FacebookLogo-D-ZSw0wB.png"
-                  alt="QR Code"
-                  class="qr-code"
-                  style="
-                    width: 200px;
-                    height: auto;
-                    display: block;
-                    margin-left: auto;
-                    margin-right: auto;
-                  "
-                />
-              </div>
-            </div>
-          </div>
+          
         </div>
+        <br>
       </div>
-      {% endblock contact %} {% block content %}
-      <!--no tuch-->
-      {% endblock content %}
-
+      
+      {% endblock contact %} 
+      
       <!--footer-->
       {% block footers %}
       <!--no tuch-->
