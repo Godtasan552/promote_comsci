@@ -168,10 +168,7 @@ footer {
     box-shadow: 0 10px 20px rgba(255, 107, 53, 0.2);
 }
 
-.underline {
-    text-decoration: underline;
-    text-decoration-color: var(--color-orange);
-}
+
 
 .contact-section {
     font-family: 'Kanit', sans-serif;
