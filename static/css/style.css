@@ -1,20 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 :root {
-    --color-dark: #1a1a1a;
+    --color-dark: #121212;
     --color-gray: #2c2c2c;
     --color-light-gray: #3d3d3d;
     --color-orange: #ff6b35;
-    --color-text: #f5f5f5;
+    --color-white: #ffffff;
+    --color-off-white: #f5f5f5;
 }
 
 body,
 html {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Kanit', sans-serif;
     background-color: var(--color-dark);
-    color: var(--color-text);
+    color: var(--color-off-white);
     line-height: 1.6;
 }
 
@@ -26,7 +27,7 @@ html {
 
 header {
     background-color: var(--color-gray);
-    padding: 0px 0; /* ลด padding */
+    padding: 10px 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -38,51 +39,50 @@ nav {
 
 #mainNav .logo-container .navbar-brand {
     color: var(--color-orange);
+    font-weight: bold;
 }
 
-/* ปุ่มเมนูใน navbar */
 .navbar-toggler {
-    color: white;
+    color: var(--color-white);
     border: 2px solid var(--color-orange);
     border-radius: 5px;
 }
 
-/* ลิงก์ใน navbar */
 .navbar-nav .nav-link {
-    color: white;
-    margin-right: 15px; /* เพิ่มระยะห่างระหว่างลิงก์ */
+    color: var(--color-white);
+    margin-right: 15px;
     transition: color 0.3s ease;
 }
 
-/* สีลิงก์เมื่อโฮเวอร์ */
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
     color: var(--color-orange);
 }
 
-/* ปุ่มใน navbar */
 .navbar-nav .btn-primary {
-    margin-left: 20px; /* ระยะห่างจากลิงก์ */
-    background-color: #0066FF;
-    color: white;
+    margin-left: 20px;
+    background-color: var(--color-orange);
+    color: var(--color-dark);
+    border: none;
 }
 
-/* ส่วนของ hero */
 .hero {
     background: linear-gradient(45deg, var(--color-gray), var(--color-dark));
-    padding: 80px 0; /* ลด padding ของ hero section */
+    padding: 80px 0;
     text-align: center;
 }
 
 h1 {
     font-size: 3em;
     margin-bottom: 20px;
+    color: var(--color-white);
 }
 
 .hero p {
     font-size: 1.2em;
     max-width: 600px;
     margin: 0 auto 30px;
+    color: var(--color-off-white);
 }
 
 .btn {
@@ -117,38 +117,34 @@ h1 {
     padding: 30px;
     border-radius: 10px;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .feature-card:hover {
     transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 107, 53, 0.2);
 }
 
 footer {
-    background-color: #1a1a1a;
+    background-color: var(--color-dark);
     text-align: center;
     padding: 20px 0;
     margin-top: 40px;
+    color: var(--color-off-white);
 }
 
-/* navbar เปลี่ยนสีเมื่อเลื่อน */
 #mainNav {
     background-color: transparent;
     transition: background-color 0.3s ease;
 }
 
 #mainNav.scrolled {
-    background-color: var(--color-orange);
+    background-color: var(--color-gray);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#mainNav .logo-container .navbar-brand {
-    color: var(--color-orange);
-    transition: color 0.3s ease;
-}
-
 #mainNav.scrolled .logo-container .navbar-brand {
-    color: var(--color-dark);
+    color: var(--color-orange);
 }
 
 .logo-container {
@@ -160,18 +156,99 @@ footer {
     margin-right: 10px;
 }
 
-
-/* เวลาเอา เมาส์ไปวาง ทำให้การ์ด ขยายอย่างนุ่มนวล */
-.card{
-    transition: transform 0.3s ease;
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--color-light-gray);
+    border: none;
+    color: var(--color-off-white);
 }
 
-/* ทำให้การ์ดขยาย */
-.card:hover{
+.card:hover {
     transform: scale(1.025);
-}
-.underline{
-    text-decoration: underline;
-    text-decoration-color: #ff6b35;
+    box-shadow: 0 10px 20px rgba(255, 107, 53, 0.2);
 }
 
+.underline {
+    text-decoration: underline;
+    text-decoration-color: var(--color-orange);
+}
+
+.contact-section {
+    font-family: 'Kanit', sans-serif;
+    line-height: 1.6;
+    color: var(--color-off-white);
+    background-color: var(--color-gray);
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.contact-section h1, 
+.contact-section h3 {
+    color: var(--color-orange);
+}
+
+.contact-section hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 107, 53, 0.75), rgba(0, 0, 0, 0));
+}
+
+.contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.contact-col {
+    flex: 1;
+    padding: 15px;
+    min-width: 300px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contact-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    fill: var(--color-orange);
+}
+
+.contact-icon-text {
+    display: flex;
+    align-items: center;
+}
+
+.contact-icon-text p {
+    margin: 0;
+    color: var(--color-off-white);
+}
+
+.contact-section iframe {
+    width: 100%;
+    max-width: 500px;
+    height: 350px;
+    border: 0;
+}
+
+.contact-section a {
+    color: var(--color-orange);
+    text-decoration: none;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+.contact-section ul {
+    padding-left: 20px;
+    color: var(--color-off-white);
+}
